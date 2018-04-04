@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+css/.DS_Store
+.DS_Store
+css/bespoke.css.map
+css/bespoke-pre-launch.css.map
