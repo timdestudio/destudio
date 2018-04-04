@@ -1,0 +1,28 @@
+{
+  "name": "destudio",
+  "version": "0.0.1",
+  "description": "site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timdestudio/destudio.git"
+  },
+  "keywords": [
+    "static",
+    "site",
+    "node",
+    "destudio"
+  ],
+  "author": "Tim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timdestudio/destudio/issues"
+  },
+  "homepage": "https://github.com/timdestudio/destudio#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
