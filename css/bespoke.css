@@ -13,6 +13,46 @@ body {
   src: url("../fonts/nbgrotesk-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nbgrotesk-semibold-webfont.woff2") format("woff2"), url("../fonts/nbgrotesk-semibold-webfont.woff") format("woff"), url("../fonts/nbgrotesk-semibold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Inter-UI-Regular.woff2") format("woff2"), url("../fonts/Inter-UI-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Inter-UI-Italic.woff2") format("woff2"), url("../fonts/Inter-UI-Italic.woff") format("woff"); }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Inter-UI-Medium.woff2") format("woff2"), url("../fonts/Inter-UI-Medium.woff") format("woff"); }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/Inter-UI-MediumItalic.woff2") format("woff2"), url("../fonts/Inter-UI-MediumItalic.woff") format("woff"); }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Inter-UI-Bold.woff2") format("woff2"), url("../fonts/Inter-UI-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Inter-UI-BoldItalic.woff2") format("woff2"), url("../fonts/Inter-UI-BoldItalic.woff") format("woff"); }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Inter-UI-Black.woff2") format("woff2"), url("../fonts/Inter-UI-Black.woff") format("woff"); }
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/Inter-UI-BlackItalic.woff2") format("woff2"), url("../fonts/Inter-UI-BlackItalic.woff") format("woff"); }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -198,6 +238,7 @@ h1 {
   line-height: 4rem; }
 
 p {
+  font-family: 'inter UI';
   font-size: 1.6rem;
   line-height: 2.4rem; }
 
