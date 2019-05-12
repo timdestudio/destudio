@@ -1,2 +1,5 @@
-Access-Control-Allow-Origin https://destudio.bigcartel.com/;
+[[headers]]
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin https = "//destudio.bigcartel.com"
 
