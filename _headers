@@ -1,5 +1,5 @@
 /*
-  Access-Control-Allow-Origin: "https://bigcartel.com"
+  Access-Control-Allow-Origin: "https://destudio.bigcartel.com"
 /*
-  X-Frame-Options: allow-from https://bigcartel.com/
+  X-Frame-Options: allow-from https://destudio.bigcartel.com/
   X-XSS-Protection: 0
