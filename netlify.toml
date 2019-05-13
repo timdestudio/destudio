@@ -2,3 +2,8 @@
 for = "/*"
 [headers.values]
 Access-Control-Allow-Origin = "https://bigcartel.com"
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "allow-from https://bigcartel.com/"
+X-XSS-Protection = "0"

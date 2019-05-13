@@ -1,0 +1,5 @@
+/*
+  Access-Control-Allow-Origin: "https://bigcartel.com"
+/*
+  X-Frame-Options: allow-from https://bigcartel.com/
+  X-XSS-Protection: 0
