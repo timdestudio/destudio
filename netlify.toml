@@ -1,4 +1,4 @@
 [[headers]]
 for = "/*"
 [headers.values]
-Access-Control-Allow-Origin https = "//destudio.bigcartel.com"
+Access-Control-Allow-Origin = "https://bigcartel.com"
