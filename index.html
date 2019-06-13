@@ -25,6 +25,9 @@
 
   <!-- CSS  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <style>
+    html{
+      height:100%;
+    }
     body{
       background:#000;
       height:100%;
@@ -32,7 +35,6 @@
     video#tumble{
       margin:0px auto;
       display:block;
-      height:100%;
     }
   </style>
   <!-- Javascript  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -44,7 +46,7 @@
 <!-- Primary Page Layout
 -––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<video autoplay loop id="tumble" width="500" height="500">
+<video autoplay id="tumble" height="100%">
   <source src="assets/video/tltbb.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
