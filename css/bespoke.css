@@ -48,7 +48,9 @@ p#landing-slogan {
   z-index: 50;
   color: #FFF;
   text-align: center;
-  mix-blend-mode: exclusion; }
+  mix-blend-mode: exclusion;
+  font-size: 0.6em;
+  line-height: 1.05em; }
 
 video#landing-video {
   position: absolute;
