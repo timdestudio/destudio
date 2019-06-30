@@ -25,6 +25,10 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFF; }
 
+section#landing-wrapper {
+  width: 100vw;
+  height: 100vh; }
+
 svg#de-studio-logo {
   position: absolute;
   bottom: 1.2em;
@@ -46,8 +50,8 @@ video#landing-video {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   z-index: 10; }
 
