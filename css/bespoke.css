@@ -24,4 +24,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFF; }
 
+video#landing-video {
+  height: 100%;
+  width: auto; }
+
 /*# sourceMappingURL=bespoke.css.map */
