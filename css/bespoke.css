@@ -25,6 +25,9 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFF; }
 
+h1#landing-title {
+  margin: 2em auto; }
+
 video#landing-video {
   position: absolute;
   top: 0;
