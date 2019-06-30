@@ -33,9 +33,6 @@ body {
   overflow-x: hidden;
   overflow-y: hidden; }
 
-video {
-  object-fit: fill; }
-
 .fade-in, .pre-load-fade-in {
   opacity: 0;
   transition: opacity 0.2s; }
