@@ -25,8 +25,12 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFF; }
 
-h1#landing-title {
-  margin: 2em auto; }
+p#landing-slogan {
+  margin: 2em auto;
+  position: absolute;
+  z-index: 50;
+  color: #000;
+  mix-blend-mode: exclusion; }
 
 video#landing-video {
   position: absolute;
