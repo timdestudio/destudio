@@ -16,6 +16,7 @@ html {
   box-sizing: border-box; }
 
 body {
+  height: 100%;
   font-family: 'SuisseIntl-Book', sans-serif;
   font-size: 2rem;
   font-weight: normal;
@@ -26,6 +27,7 @@ body {
 
 video#landing-video {
   height: 100%;
-  width: auto; }
+  width: auto;
+  object-fit: cover; }
 
 /*# sourceMappingURL=bespoke.css.map */
