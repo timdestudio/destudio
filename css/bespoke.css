@@ -25,6 +25,11 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #FFF; }
 
+svg#de-studio-logo {
+  position: absolute;
+  bottom: 3.6em;
+  left: 3.6em; }
+
 p#landing-slogan {
   margin: 2em auto;
   position: absolute;
