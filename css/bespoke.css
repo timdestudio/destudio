@@ -30,6 +30,8 @@ p#landing-slogan {
   position: absolute;
   z-index: 50;
   color: #000;
+  text-align: center;
+  width: 100vw;
   mix-blend-mode: exclusion; }
 
 video#landing-video {
