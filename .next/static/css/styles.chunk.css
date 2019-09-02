@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'NBGrotesk';
+  font-display: auto;
+  src: url("/static/fonts/nbgrotesk-semibold.woff2") format("woff2"), url("/static/fonts/nbgrotesk-semibold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Inter';
+  font-display: auto;
+  src: url("/static/fonts/Inter-Regular.woff2") format("woff2"), url("/static/fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Inter';
+  font-display: auto;
+  src: url("/static/fonts/Inter-SemiBold.woff2") format("woff2"), url("/static/fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+/* stylelint-enable */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+  width: 100%; }
+
+html,
+body {
+  height: auto;
+  color: #191919;
+  background-color: white; }
+
+body {
+  font-family: 'Inter';
+  font-weight: 400; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #191919;
+  transition: color .45s ease; }
+  @media (hover: hover) {
+    a:hover {
+      color: #626262; } }
+  a:active {
+    color: #626262; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

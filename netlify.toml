@@ -1,9 +1,0 @@
-[[headers]]
-for = "/*"
-[headers.values]
-Access-Control-Allow-Origin = "*"
-[[headers]]
-for = "/*"
-[headers.values]
-X-Frame-Options = "allow-from *"
-X-XSS-Protection = "0"
