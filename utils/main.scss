@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'NBGrotesk';
+    font-display: auto;
+    src: url('/static/fonts/nbgrotesk-semibold.woff2') format('woff2'),
+         url('/static/fonts/nbgrotesk-semibold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: auto;
+    src: url('/static/fonts/Inter-Regular.woff2') format('woff2'),
+         url('/static/fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: auto;
+    src: url('/static/fonts/Inter-SemiBold.woff2') format('woff2'),
+         url('/static/fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin responsive-size($px, $min, $max: false) {
+    $responsive: get-vw($px);
+    $min-breakpoint: $min / $responsive * 100;
+
+    @media (max-width: #{$min-breakpoint}px) {
+        font-size: $min * 1px;
+    }
+
+    @if $max {
+        $max-breakpoint: $max / $responsive * 100;
+
+        @media (min-width: #{$max-breakpoint}px) {
+            font-size: $max * 1px;
+        }
+    }
+
+    font-size: $px * 1px;
+    font-size: $responsive * 1vw;
+}
+
+/* stylelint-enable */
+
+@function get-vw($target) {
+    $vw-context: ($desktopDesignWidth * .01);
+    @return ($target / $vw-context);
+}
+
+$base: #191919;
+
+:global {
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-overflow-scrolling: touch;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    html,
+    body {
+        height: auto;
+        color: $base;
+        background-color: white;
+    }
+
+    body {
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $base;
+        transition: color .45s ease;
+
+        @media (hover: hover) {
+
+            &:hover {
+                color: #626262;
+            }
+        }
+    
+        &:active {
+            color: #626262;
+        }
+    }
+}
+
