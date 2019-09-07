@@ -17,19 +17,14 @@ class Products extends React.PureComponent {
     render = () => {
         const products = [
             {
-                image: '/static/images/dresser-light.png',
-                title: 'Task Light',
-                price: '600.00'
+                image: '/static/images/tray-render.png',
+                title: 'Tray',
+                price: '100.00'
             },
             {
                 image: '/static/images/tea-light.png',
                 title: 'Task Light',
                 price: '600.00'
-            },
-            {
-                image: '/static/images/dresser-light.png',
-                title: 'Dresser Light',
-                price: '900.00'
             },
             {
                 image: '/static/images/tea-light.png',
