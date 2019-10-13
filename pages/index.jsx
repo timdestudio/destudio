@@ -31,32 +31,22 @@ export default class Index extends React.PureComponent {
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <meta name="description" content="landingspage for destudio"/>
                 </Head>
+                 
+                <Header {...{
+                    rafLoop: this.state.rafLoop
+                }} />
+                <Video />
+                <h1>We make relentlessly honest objects.</h1>
 
-                <h1>Coming Soon</h1> 
-                {/* 
-                    <Header {...{
-                        rafLoop: this.state.rafLoop
-                    }} />
-                    <Video />
-                    <h1>We make relentlessly honest objects.</h1>
-
-                    <Products {...{
-                        rafLoop: this.state.rafLoop
-                    }} />
-                */}
+                <Products {...{
+                    rafLoop: this.state.rafLoop
+                }} />
+                
 
                 <style jsx>{`
                     .container {
-                        // padding-top: ${getCols(8)}vw;
-                        // padding-bottom: ${ getCols(1) }vw;
-
-                        // remove when removing coming soon
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        width: 100vw;
-                        height: 100vh;
+                        padding-top: ${getCols(8)}vw;
+                        padding-bottom: ${ getCols(1) }vw;
                     }
 
                     h1 {
@@ -65,26 +55,25 @@ export default class Index extends React.PureComponent {
                         line-height: 1em;
                         letter-spacing: -.04em;
 
-                        // put back when removing coming soon
-                        // padding: ${ getCols(4) }vw ${ getCols(2) }vw;
-                        // padding-bottom: 0;
+                        padding: ${ getCols(4) }vw ${ getCols(2) }vw;
+                        padding-bottom: 0;
                         
-                        // width: 100%;
+                        width: 100%;
                     }
 
                     @media (min-width: 900px) { 
                         .container {
-                            // padding-top: ${getCols(3.5)}vw;
-                            // padding-bottom: ${ getCols(1) }vw;
+                            padding-top: ${getCols(3.5)}vw;
+                            padding-bottom: ${ getCols(1) }vw;
                         }
 
                         h1 {
                             font-size: ${ fontSizer(98) }vw;
 
-                            // padding: ${ getCols(.75) }vw ${ getCols(1) }vw;
-                            // padding-bottom: ${ getCols(4.75) }vw;
+                            padding: ${ getCols(.75) }vw ${ getCols(1) }vw;
+                            padding-bottom: ${ getCols(4.75) }vw;
 
-                            // width: 75%;
+                            width: 75%;
                         }
                     }
                 `}</style>

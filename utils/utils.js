@@ -1,5 +1,5 @@
 export function fontSizer(size) {
-    const responsiveSize = size / 15
+    const responsiveSize = size / 14
     
     return responsiveSize
 }
