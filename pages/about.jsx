@@ -48,7 +48,8 @@ export default class Index extends React.PureComponent {
                 </Head>
                  
                 <Header {...{
-                    rafLoop: this.state.rafLoop
+                    rafLoop: this.state.rafLoop,
+                    item: 'about'
                 }} />
 
                 <div className="about-intro">
@@ -79,8 +80,10 @@ export default class Index extends React.PureComponent {
                                 This is why we believe a more honest approach to design helps create a world we'd like to see more of. A more sustainable, forward thinking, positive world.
                             </p>
 
-                            Lorem ipsum dolor sit amet pruit any questions?
-                            <a href="">→ Get in touch</a>
+                            <span className="seperator">
+                                Lorem ipsum dolor sit amet pruit any questions?
+                                <a href="">→ Get in touch</a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -97,7 +100,7 @@ export default class Index extends React.PureComponent {
                     .container {
                         position: relative;
 
-                        padding-top: ${getCols(9)}vw;
+                        padding-top: ${getCols(7.35)}vw;
                         padding-bottom: ${ getCols(1) }vw;
                     }
 
@@ -107,22 +110,29 @@ export default class Index extends React.PureComponent {
                         line-height: .96em;
                         letter-spacing: -.04em;
 
-                        width: ${ getCols(11) }vw;
-                        margin-left: -.3em;
+                        width: 100%;
+
+                        order: 2;
                     }
 
                     .about-intro {
                         display: flex;
                         justify-content: space-between;
 
+                        flex-direction: column;
+
                         width: 100%;
 
-                        padding: 0 ${ getCols(3) }vw;
-                        margin-bottom: ${ getCols(3.7) }vw;
+                        padding: 0 ${ getCols(2) }vw;
+                        margin-bottom: ${ getCols(4.5) }vw;
                     }
 
                     .intro-image {
-                        width: ${ getCols(11) }vw;
+                        width: 100%;
+
+                        margin-bottom: ${ getCols(3.1) }vw;
+
+                        order: 1;
                     }   
 
                     .intro-image .src {
@@ -138,18 +148,29 @@ export default class Index extends React.PureComponent {
                     .about-content {
                         display: flex;
                         align-items: flex-end;
+                        flex-direction: column;
 
                         padding: 0 ${ getCols(2) }vw;
-                        margin-bottom: ${ getCols(4) }vw;
+                        margin-bottom: ${ getCols(2) }vw;
                     }
 
                     .content-left,
                     .content-right {
-                        width: 50%;
+                        width: 100%;
+                    }
+
+                    .content-left {
+                        order: 2;
+                    }
+
+                    .content-right {
+                        order: 1;
                     }
 
                     .content-image {
-                        width: ${ getCols(10) }vw;
+                        width: 100%;
+
+                        margin-top: ${ getCols(6.2) }vw;
                     }   
 
                     .content-image .src {
@@ -163,43 +184,52 @@ export default class Index extends React.PureComponent {
                     }
 
                     .content-text {                 
-                        font-size: 20px; // TODO: responsive font size mobile
-                        line-height: .96em;
-                        letter-spacing: -.04em;
+                        font-size: 16px; // TODO: responsive font size mobile
+                        line-height: 1.3em;
+                        letter-spacing: -.01em;
                         
-                        padding-left: ${ getCols(1.5) }vw;
-                        padding-right: ${ getCols(2) }vw;
+                        width: 90%;                        
                     }
 
                     .content-text strong {
                         display: block;
-                        margin-bottom: .2em;
+                        margin-bottom: .35em;
                     }
 
                     .content-text a {
                         display: block;
-                        margin-top: .5em;
+                        margin-top: .75em;
 
+                        font-size: 14px;
                         font-weight: 700;
                     }
 
+                    .seperator {
+                        display: block;
+                        width: 100%;
+
+                        padding-top: 1em;
+                        border-top: 1px solid rgba(0, 0, 0, .15);
+                    }
+
                     .content-text p:not(:last-of-type) {
-                        margin-bottom: ${getCols(1.1)}vw;
+                        margin-bottom: ${getCols(2.9)}vw;
                     }
 
                     .content-text p:last-of-type {
-                        margin-bottom: ${getCols(1.9)}vw;
+                        margin-bottom: ${getCols(4.5)}vw;
                     }
 
                     .about-footer {
                         display: flex;
                         justify-content: flex-end;
                         
-                        padding-right: ${getCols(5)}vw;
+                        padding: 0 ${getCols(2)}vw;
+                        margin-bottom: ${getCols(7.5)}vw;
                     }
 
                     .footer-image {
-                        width: ${ getCols(10) }vw;
+                        width: 100%;
                     }   
 
                     .footer-image .src {
@@ -217,9 +247,53 @@ export default class Index extends React.PureComponent {
                             padding-top: ${getCols(3.5)}vw;
                             padding-bottom: ${ getCols(1.8) }vw;
                         }
+                        
+                        .about-intro {
+                            flex-direction: row;
+                            
+                            padding: 0 ${ getCols(3) }vw;
+                            margin-bottom: ${ getCols(3.7) }vw;
+                        }
 
-                        h1 {
+                        .about-intro h1 {
                             font-size: ${ fontSizer(96) }vw;
+
+                            width: ${ getCols(11) }vw;
+                            margin-left: -.3em;
+                            
+                            order: 1;
+                        }
+
+                        .about-intro .intro-image {
+                            width: ${ getCols(11) }vw;
+
+                            margin-bottom: 0;
+                            order: 2;
+                        }
+
+                        .about-content {
+                            flex-direction: row;
+                            
+                            margin-bottom: ${ getCols(4) }vw;
+                        }
+
+                        .content-left,
+                        .content-right {
+                            width: 50%;
+                        }
+
+                        .content-left {
+                            order: 1;
+                        }
+    
+                        .content-right {
+                            order: 2;
+                        }
+
+                        .content-image {
+                            width: ${ getCols(10) }vw;
+
+                            margin-top: 0;
                         }
 
                         .content-text {
@@ -227,6 +301,13 @@ export default class Index extends React.PureComponent {
                             // font-size: 18px;
                             line-height: 1.3em;
                             letter-spacing: -.01em;
+
+                            padding-left: ${ getCols(1.5) }vw;
+                            padding-right: ${ getCols(2) }vw;
+                        }
+
+                        .content-text strong {
+                            margin-bottom: .2em;
                         }
 
                         .content-text p {
@@ -234,6 +315,33 @@ export default class Index extends React.PureComponent {
                             // font-size: 20px;
                             line-height: 1.3em;
                             letter-spacing: -.01em;
+                        }
+
+                        .content-text a {
+                            font-size: ${ fontSizer(16) }vw;
+                            line-height: 1.3em;
+                            letter-spacing: -.01em;
+
+                            margin-top: .5em;
+                        }
+
+                        .content-text p:not(:last-of-type) {
+                            margin-bottom: ${getCols(1.1)}vw;
+                        }
+    
+                        .content-text p:last-of-type {
+                            margin-bottom: ${getCols(1.9)}vw;
+                        }
+
+                        .about-footer {
+                            padding: 0;
+                            padding-right: ${getCols(5)}vw;
+                            
+                            margin-bottom: 0;
+                        }
+
+                        .footer-image {
+                            width: ${ getCols(10) }vw;
                         }
                     }
                 `}</style>
@@ -263,6 +371,7 @@ export default class Index extends React.PureComponent {
                         align-items: flex-end;
 
                         width: 100%;
+                        padding: 0 ${ getCols(2) }vw;
                     }
 
                     .instagram-image {
@@ -311,6 +420,7 @@ export default class Index extends React.PureComponent {
                             left: ${ getCols(1) }vw;
 
                             width: ${ getCols(4) }vw;
+                            padding: 0;
                             
                             transform: ${ this.state.position !== 'bottom' ? 'translateX(-100%)' : 'none' };
                             opacity: ${ this.state.position !== 'bottom' ? 0: 1 };
