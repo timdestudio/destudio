@@ -68,21 +68,22 @@ export default class Index extends React.PureComponent {
                     <div className="content-right">
                         <div className="content-text">
                             <p>
+                                <strong>What we’re aiming for</strong>
+                                We believe an honest approach to design helps create a world we'd like to see more of. A more future thinking, sustainable, positive world.
+                            </p>
+                            <p>
                                 <strong>Honest?</strong>
-                                We strip our objects down to their essence. So that we end up with less visual and environmental pollution. We call these objects Honest.
+                                We strip our objects down to their essence. So that we end up with less visual and environmental pollution. Our products have nothing to hide. No layers of paint or plastic. No tricks or gimmicks. We call this Honest.
                             </p>
                             <p>
                                 <strong>Why honesty matters</strong>
                                 Honest things tend to have a positive impact and be beautiful. They don’t hide behind confusing words or decoration. And they are considerate about people and their environment. To make them, requires self reflection and more selfless thinking.
                             </p>
-                            <p>
-                                <strong>What we’re aiming for</strong>
-                                This is why we believe a more honest approach to design helps create a world we'd like to see more of. A more sustainable, forward thinking, positive world.
-                            </p>
+
 
                             <span className="seperator">
-                                Lorem ipsum dolor sit amet pruit any questions?
-                                <a href="">→ Get in touch</a>
+                                Any questions?
+                                <a href="mailto:tim@thisisdestudio.com">→ Get in touch</a>
                             </span>
                         </div>
                     </div>
