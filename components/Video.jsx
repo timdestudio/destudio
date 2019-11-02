@@ -5,9 +5,9 @@ class Video extends React.PureComponent {
     render = () => {
         return (
             <div className="container">
-                <video className="video" autoPlay loop muted playsInline>
+                {/* <video className="video" autoPlay loop muted playsInline>
                     <source src={`/static/videos/landing-video.mp4`} type="video/mp4" />
-                </video>
+        </video> */}
                 
                 <style jsx>{`
                     .container {
@@ -19,10 +19,10 @@ class Video extends React.PureComponent {
                         background: #F7F7F7;
                         margin-left: ${ getCols(2) }vw;
 
-                        // background-image: url('/static/images/video-placeholder.png');
-                        // background-size: cover;
-                        // background-position: center;
-                        // background-repeat: no-repeat;
+                        background-image: url('/static/images/video-placeholder.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
                     }
 
                     video {
