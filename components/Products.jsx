@@ -1,5 +1,5 @@
 import React from 'react'
-import delay from 'delay'
+import Link from 'next/link';
 
 import { fontSizer, getCols, } from '../utils/utils'
 
@@ -17,19 +17,22 @@ class Products extends React.PureComponent {
     render = () => {
         const products = [
             {
-                image: '/static/images/tray-render.png',
-                title: 'Tray',
-                price: '100.00'
-            },
-            {
-                image: '/static/images/tea-light.png',
+                image: '/static/images/task-light.png',
+                hoverImage: '/static/images/task-light-detail.png',
                 title: 'Task Light',
-                price: '600.00'
+                price: '599.00'
             },
             {
-                image: '/static/images/tea-light.png',
-                title: 'Puzzle Tea Light',
-                price: '120.00'
+                image: '/static/images/tea-light-big.png',
+                hoverImage: '/static/images/tea-light-big-detail.png',
+                title: 'Tea Light Holder',
+                price: '90.00'
+            },
+            {
+                image: '/static/images/tea-light-small.png',
+                hoverImage: '/static/images/tea-light-small-detail.png',
+                title: 'Tea Light Holder Big',
+                price: '125.00'
             },
         ]
 
@@ -38,7 +41,7 @@ class Products extends React.PureComponent {
                 <div className={`sticky-text ${ this.state.position !== 'initial' ? 'fixed' : '' }`} ref={ el => this.stickyEl = el }>
                     <p>
                         Our objects are completely stripped down, they have nothing to hide. Good looking and good for the world.
-                        <strong><a href="" target="_blank" rel="noopener">→ More about the studio</a></strong>
+                        <strong><Link href="/about">→ More about De Studio</Link></strong>
                     </p>
                 </div>
 
@@ -111,9 +114,11 @@ class Products extends React.PureComponent {
         return products.map((product, i) => {
             return (
                 <div className="product-card" key={i}>
-                    <a href="" target="_blank" rel="noopener" className="product-image">
+                    {/* <a href="" target="_blank" rel="noopener" className="product-image"> */}
+                    <div className="product-image">
                         <span className="product-image-hover"></span>
-                    </a>
+                    </div>
+                    {/* </a> */}
 
                     <div className="caption">
                         <strong>{ product.title }</strong>
@@ -158,7 +163,7 @@ class Products extends React.PureComponent {
                             background-repeat: no-repeat;
                             background-size: contain;
 
-                            transition: opacity .35s ease;
+                            transition: opacity .15s ease;
                         }
                         
                         .product-image-hover {
@@ -171,14 +176,14 @@ class Products extends React.PureComponent {
 
                             z-index: 1;
 
-                            background-image: url('/static/images/hover-placeholder.jpg');
+                            background-image: url('${ product.hoverImage }');
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
 
                             opacity: 0;
-                            transform: scale(1.05);
-                            transition: transform .75s cubic-bezier(.19, 1, .22, 1), opacity .35s ease;
+                            // transform: scale(1.05);
+                            transition: transform .75s cubic-bezier(.19, 1, .22, 1), opacity .15s ease;
                         }
 
                         @media (hover: hover) {
@@ -233,7 +238,7 @@ class Products extends React.PureComponent {
 
     renderInstagramPost = () => {
         return (
-            <div className="instagram-post">
+            <a href="https://www.instagram.com/thisisdestudio/" rel="noopener" target="_blank"  className="instagram-post">
                 <div className="instagram-image">
                     <div className="instagram-image-mask">
                         <div className="instagram-image-inner">
@@ -282,7 +287,7 @@ class Products extends React.PureComponent {
                     }
 
                     .caption {
-                        font-size: 14px; // TODO: responsive font size mobile
+                        font-size: 14px;
                         line-height: 1.43em;
 
                         margin: 1.5em 0;
@@ -333,7 +338,7 @@ class Products extends React.PureComponent {
                         }
                     }
                 `}</style>
-            </div>
+            </a>
         )
     }
 

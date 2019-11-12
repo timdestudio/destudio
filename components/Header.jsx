@@ -18,7 +18,7 @@ class Header extends React.PureComponent {
     render = () => {
         return (
             <header className="header" ref={ el => this.menu = el }>
-                <a href="" target="_blank" rel="noopener">Shop</a>
+                {/* <a href="" target="_blank" rel="noopener">Shop</a> */}
                 <Link href="/about">
                   <a>About</a>
                 </Link>

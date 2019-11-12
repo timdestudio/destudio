@@ -19,7 +19,7 @@ class Video extends React.PureComponent {
                         background: #F7F7F7;
                         margin-left: ${ getCols(2) }vw;
 
-                        background-image: url('/static/images/video-placeholder.png');
+                        background-image: url('/static/images/video-placeholder.jpg');
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
