@@ -34,8 +34,8 @@ export default class Index extends React.PureComponent {
     render = () => {
         const data = {
             introImage: '/static/images/about-intro.jpg',
-            aboutImageContent: '/static/images/about-1.jpg',
-            aboutImageFooter: '/static/images/about-2.jpg',
+            aboutImageContent: '/static/images/about-1.png',
+            aboutImageFooter: '/static/images/about-2.png',
         }
 
         return (
